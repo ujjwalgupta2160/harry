@@ -1,0 +1,31 @@
+LAB 6 LOGBOOK - ujjwal gupta - e26bo7ofo862 
+SETUP: my working directory
+T1 prediction: I think ls / will show about 15 items
+T1: /bin holds program files used for basic system operations
+T1: /dev holds hardware and system files
+T1: / means root directory , ~ means home directory , . means current directory
+T1: the OS groups files by by directories
+T2 prediction: ./deploy will not run because it does not have execute permission
+T2 prediction: appending after u-w will not append because we don't have the permission to write 
+T2: -rw-r--r-- written in numbers is 644
+T2: ./deploy failed at first because it didn't have execute command
+T2: the new policy needed chmod 750**
+-rwxr-x---  1 hard  staff  64 17 Sep 00:06 deploy
+T3 prediction: ./nst-info will not run because it does not have execute permission
+T3 prediction: adding .py to the name will give us the idea that it is executed using python
+T3: python3 nst-info worked but ./nst-info failed because to execute it we need permissions unlike nst-info.py
+T3: renaming the file to .py changed only its name
+T3: file extensions are actually used by user and some programs, not by macOS when it launches a shebang script
+T4 prediction: a file called ls in ~/nst/bin will run the file instead of actual ls command
+T4: nst-info failed from /tmp because ~/nst/bin was not in PATH
+T4: the full path worked because it gave shell the exact path to execute the program
+T4: PATH is searched from left to right and stops at it's desired match
+T4: my fake ls took over because ~/nst/bin was in the PATH before the system's ls command 
+T4: the PATH change vanished in a new terminal because export changes path for only the current terminal session
+EXIT 1: a file has -rw-r--r--. running ./file does not execute it  and the one command that fixes
+it is chmod +x
+EXIT 2: python3 script works but ./script says permission denied. explained to a
+friend: Python reads the script as an input whereas ./script asks the OS to launch it, which requires execute permission
+EXIT 3: PATH worked yesterday, gone this morning, nobody touched the file. what
+happened: PATH was changed using export during the last terminal session, so it disappeared when the terminal was reopened
+EXIT 4: one prediction I got wrong today, and what I learned from it: I expected my fake ls command to run immediately, but ls was an alias (ls -G). I learned that aliases can take priority over PATH

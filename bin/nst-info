@@ -1,0 +1,3 @@
+#!/usr/bin/env python3
+print("NST System Utility")
+print("The script is running successfully.")
