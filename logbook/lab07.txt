@@ -1,1 +1,13 @@
-LAB 7 LOGBOOK - Ujjwalgupta  - E26B07862
+LAB 7 LOGBOOK - Ujjwal gupta - E26B070862
+SETUP: clang version =12.52  python3 version=3.9.6
+T1: running hello.py created as  new files python
+T1 prediction: ./hello.c will ??? and python3 hello.c will ???
+T1: the extra step in the C workflow is ??? and it produces ??? T1: when I run python3 hello.py the CPU executes ??? ; hello.py is just ?? T1: hello.c is ??? bytes and hello is ??? bytes. my guess for why: ???
+T2: file says hello is Mach-O 64-bit executable arm64
+T2: python3 is Mach-O universal binary with 3 architectures so when I run python3 hello.py the CPU executes compiler  and reads  as data
+T2: my string sits at offset hexadecimal inside helo
+T2: heloo.py contain only 64 bit the extra in hello are 32 
+T2: ops saw garbage because a text was showing ???as if it were
+T3: C took less 0s ,python took .1s ratio is not to be define but contractor "s 50x claim sort to be true
+T3: ON EVERY PASS the interpreter had to used compiler fast ; ./sum had thar done 
+T3:interpretation cost matters when you need matter each lin eof code and does not when we not matter each line of code 
